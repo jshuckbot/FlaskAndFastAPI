@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    background: cadetblue;
+    
+}
+
+body {
+    background: bisque;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+a {
+    font-size: 40px;
+    padding: 8px;
+    color: darkslategray;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.center{
+    padding-right: calc(50% - 500px);
+    padding-left: calc(50% - 500px);
+}
+.logo {
+    font-size: 60px;
+    color: oldlace;
+}
+
+
+
+
+

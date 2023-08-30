@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Интернет-магазин{% endblock title %}</title>
+    <link rel="stylesheet" href="/static/css/style.css" >
+</head>
+<body>
+    <header>
+        <section class="logo">Интернет-магазин</section>
+        <section class="header__menu">
+            <a href="/">Главная</a>
+            <a href="/clothes/">Одежда</a>
+            <a href="/jackets/">Куртки</a>
+            <a href="/shoes/">Обувь</a>
+        </section>
+    </header>
+
+    <section class="center">
+        {% block content %}
+            Не заполено
+        {% endblock content %}
+    </section>
+    
+</body>
+</html>
