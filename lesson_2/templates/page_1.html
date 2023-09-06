@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+	{{ title }}
+{% endblock title %}
+
+{% block content %}
+<h1>Ввод имени и email</h1>
+
+<form action="/cookie" method="post">
+    <input type="text" placeholder="Введите имя" name="name">
+    <input type="email" placeholder="Ввод email" name="email">
+    <button class="button"  type="submit">Отправить</button>
+</form>
+{% endblock content %}
