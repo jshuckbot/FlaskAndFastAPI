@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Регистрация</h1>
+<form method="POST" action="{{ url_for('register') }}">
+    {{ form.csrf_token }}
+    {% for field in form if field.name != 'csrf_token' %}
+    <p>
+    {{ field.label }}
+    {{ field }}
+    {% if field.errors %}
+    </p>
+    <p>
+        {% for error in field.errors %}
+        {{ error }}
+        {% endfor %}
+   </p>
+    {% endif %}
+    {% endfor %}
+    <p>
+        <button class="button" type="submit">Регистрация</button>
+    </p>
+</form>
+{% endblock %}
+
