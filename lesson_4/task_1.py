@@ -63,7 +63,7 @@ def download_process(urls: list):
     start_time = perf_counter()
 
     for url in urls:
-        thread = threading.Thread(target=download_image_sync, args=(url,))
+        thread = Process(target=download_image_sync, args=(url,))
         processes.append(thread)
         thread.start()
 
