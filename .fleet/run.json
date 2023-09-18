@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "unicorn fast_api",
+            "program": "/Users/jshuckbot/projects/geekbrains/.venv/flaskFastAPI/bin/uvicorn",
+            "args": [
+                "lesson_5.main:app",
+                "--reload",
+            ],
+        },
+
+    ]
+}
+
